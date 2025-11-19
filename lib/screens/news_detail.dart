@@ -44,7 +44,6 @@ class NewsDetailPage extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // Featured badge
                   if (news.isFeatured)
                     Container(
                       padding: const EdgeInsets.symmetric(
