@@ -20,7 +20,6 @@ class _NewsEntryListPageState extends State<NewsEntryListPage> {
     
     var data = response;
     
-    // Convert json data to NewsEntry objects
     List<NewsEntry> listNews = [];
     for (var d in data) {
       if (d != null) {
