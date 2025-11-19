@@ -18,7 +18,6 @@ class _NewsEntryListPageState extends State<NewsEntryListPage> {
     
     final response = await request.get('http://localhost:8000 /json/');
     
-    // Decode response to json format
     var data = response;
     
     // Convert json data to NewsEntry objects
