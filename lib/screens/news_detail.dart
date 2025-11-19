@@ -7,7 +7,6 @@ class NewsDetailPage extends StatelessWidget {
   const NewsDetailPage({super.key, required this.news});
 
   String _formatDate(DateTime date) {
-    // Simple date formatter without intl package
     final months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 
                     'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     return '${date.day} ${months[date.month - 1]} ${date.year}, ${date.hour.toString().padLeft(2, '0')}:${date.minute.toString().padLeft(2, '0')}';
