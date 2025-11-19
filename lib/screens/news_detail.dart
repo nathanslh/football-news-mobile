@@ -24,7 +24,6 @@ class NewsDetailPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Thumbnail image
             if (news.thumbnail.isNotEmpty)
               Image.network(
                 'http://localhost:8000/proxy-image/?url=${Uri.encodeComponent(news.thumbnail)}',
